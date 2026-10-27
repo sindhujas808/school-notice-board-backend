@@ -50,7 +50,7 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/sindhujas808/school-notice-board-backend
 cd school-notice-board-backend
 ```
 
@@ -61,21 +61,6 @@ Create a MySQL database:
 ```sql
 CREATE DATABASE noticeboard_db;
 ```
-
-Update your database username, password, and connection settings in `src/main/resources/application.properties`.
-
-Example:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/noticeboard_db
-spring.datasource.username=YOUR_MYSQL_USERNAME
-spring.datasource.password=YOUR_MYSQL_PASSWORD
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
-
-Replace the example credentials with your local MySQL credentials. Keep real passwords and other secrets out of GitHub.
 
 ### 3. Run the Application
 
@@ -100,12 +85,6 @@ http://localhost:8080/swagger-ui/index.html
 ```
 
 Use Swagger UI to explore and test the available API endpoints.
-
-## Project Status
-
-**Backend Development:** Implemented and tested API endpoints for the project's core modules.
-
-The frontend is not included in this backend repository unless added separately.
 
 ## Future Enhancements
 
